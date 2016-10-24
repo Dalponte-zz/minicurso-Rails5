@@ -37,7 +37,15 @@ Pronto. Agora, se você acessar a pasta escolhida (A criada acima `minicurso_rai
 `# config.file_watcher = ActiveSupport::EventedFileUpdateChecker` deletar ou comentar(colocando # no início)
 `config.file_watcher = ActiveSupport::FileUpdateChecker ` Esta fica no lugar
 
+- Sair do terminal da VM com comando `exit` e  Reiniciar a VM com o comando `vagrant reload --provision`
+
 Para sair da VM no terminal, pressione Ctrl+D ou o comando `exit`. A VM continuará rodando, para desliga-la, utilize o comando `vagrant halt`. Para incia-la novamente, utilize o comando `vagrant up` (sempre estando na pasta da VM).
+
+- Para que seja possível acessar o projeto pelo navegador, é necessário rodar o servidor.
+ - Acesse a VM via ssh (`vagrant ssh`) e acesse a pasta "vagrant" (`cd /vagrant`);
+ - Inicie o servidor pelo comando `rails server --bind 0.0.0.0`
+ - No seu navegador, basta digitar o endereço do projeto: `http://192.168.33.10:3000/`
+ - A página inicial do projeto deve aparecer, informando a versão do Ruby `2.3.1 (x86_64-linux-gnu)` e do Rails `5.0.0.1`
 
 <h3>Observações</h3>
 - O vagrant "liga" a pasta criada para instalar o projeto rails ao diretório `/vagrant` na VM, assim, você pode editar os códigos fonte utilizando qualquer SO, mas rodando o Ruby em um ambiente linux. Vale a pena ver: https://friendsofvagrant.github.io/v1/docs/getting-started/why.html
