@@ -51,7 +51,7 @@ Para sair da VM no terminal, pressione Ctrl+D ou o comando `exit`. A VM continua
 <h3>Observações</h3>
 - O vagrant "liga" a pasta criada para instalar o projeto rails ao diretório `/vagrant` na VM, assim, você pode editar os códigos fonte utilizando qualquer SO, mas rodando o Ruby em um ambiente linux. Vale a pena ver: https://friendsofvagrant.github.io/v1/docs/getting-started/why.html
 - PODE ser necessário ativar a virtualização no setup da placa mãe de sua máquina. Assim, segue alguns links que encontrei para ajudar a resolução de possíveis problemas:
-No geral, basta procurar no google as palavras chave "ativar virtualização + [marca do notebook ou placa mãe]".
+No geral, basta procurar no google as palavras chave "ativar virtualização + [marca do notebook ou placa mãe/processador]".
  - https://www.youtube.com/watch?v=886cH0E-T7I
  - http://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/
  - http://www.sysprobs.com/disable-enable-virtualization-technology-bios
