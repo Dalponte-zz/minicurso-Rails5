@@ -23,6 +23,8 @@ Portanto, alguns programas são necessários:
 - Instalar Virtual box, Vagrant e Bash;
 - Iniciar o Bash, acessando uma pasta a escolha. Recomendado uma pasta de fácil acesso, como `C:/minicurso_rails5` em windows ou `/home/[usuário]/minicurso_rails5`
 - Obter os arquivos da VM com o comando no terminal (estando na pasta criada acima): `vagrant init jadesystems/rails5` ;
+- Editar o arquivo `VagrantFile` que está na pasta raiz do projeto:
+ - Descomentar a linha 29 (remover caractere #) `  config.vm.network "private_network", ip: "192.168.33.10"`
 - Ordenar ao Vagrant para criar (baixar) a maquina virtual e inicia-la: `vagrant up` ;
 - Acessar o terminal da máquina virtual via SSH (como se fosse acesso remoto a outra máquina): `vagrant ssh`;
 - Adentrar à pasta compartilhada pelo vagrant da VM com a sua maquina (mais detalhes em *Obersevações*): `cd /vagrant`;
