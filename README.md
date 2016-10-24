@@ -46,6 +46,7 @@ Para sair da VM no terminal, pressione Ctrl+D ou o comando `exit`. A VM continua
  - Inicie o servidor pelo comando `rails server --bind 0.0.0.0`
  - No seu navegador, basta digitar o endereço do projeto: `http://192.168.33.10:3000/`
  - A página inicial do projeto deve aparecer, informando a versão do Ruby `2.3.1 (x86_64-linux-gnu)` e do Rails `5.0.0.1`
+ - Para cancelar o servidor, pressione Ctrl + C
 
 <h3>Observações</h3>
 - O vagrant "liga" a pasta criada para instalar o projeto rails ao diretório `/vagrant` na VM, assim, você pode editar os códigos fonte utilizando qualquer SO, mas rodando o Ruby em um ambiente linux. Vale a pena ver: https://friendsofvagrant.github.io/v1/docs/getting-started/why.html
